@@ -33,16 +33,14 @@ function saveAttendance() {
         const cells = rows[i].getElementsByTagName('td');
         const alumno = cells[0].innerText;
         const dia = cells[1].innerText;
-        const hora = cells[2].innerText;
-        const asistio = cells[3].getElementsByTagName('input')[0].checked;
-        const noAsistio = cells[4].getElementsByTagName('input')[0] .checked;
-        const excusa = cells[5].getElementsByTagName('input')[0].checked;
-        const comentario = cells[6].getElementsByTagName('input')[0].value;
+        const asistio = cells[2].getElementsByTagName('input')[0].checked;
+        const noAsistio = cells[3].getElementsByTagName('input')[0] .checked;
+        const excusa = cells[4].getElementsByTagName('input')[0].checked;
+        const comentario = cells[5].getElementsByTagName('input')[0].value;
 
         attendanceData.push({
             alumno,
             dia,
-            hora,
             asistio,
             noAsistio,
             excusa,

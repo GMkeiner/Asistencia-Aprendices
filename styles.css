@@ -1,57 +1,61 @@
+*{
+  font-family: calibri;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
-    margin: 0;
-    padding: 20px;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 20px;
 }
 
 h1 {
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    color: #343a40;
-    margin-bottom: 40px;
+  text-align: center;
+  color: #343a40;
+  margin-bottom: 40px;
 }
-
+.June{
+  margin-left: 43%;
+  color: #ffff;
+  font-size: 35px;
+  border-radius: 10px ;
+  text-align: center;
+  width: 200px;
+  height: 45px;
+  background-color: #39A900;
+}
+h3:hover{
+  background-color: #004085;
+}
 table {
-    width: 90%;
-    margin: 0 auto;
-    border-collapse: collapse;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 th, td {
-    border: 1px solid #dee2e6;
-    padding: 12px 20px;
-    text-align: center;
+  border: 1px solid #dee2e6;
+  padding: 12px 20px;
+  text-align: center;
 }
 
 th {
-    background-color: #39A900;
-    color: white;
-    font-weight: bold;
-    text-transform: uppercase;
+  background-color: #39A900;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
 }
-
+th:hover{
+  background-color: #004085;
+}
 tr:nth-child(even) {
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 tr:hover {
-    background-color: #e9ecef;
+  background-color: #e9ecef;
 }
 
-/* input[type="radio"] {
-    margin: 0;
-}
-
-input[type="radio"]:checked::before {
-    content: '';
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    background-color: #007bff;
-    border-radius: 50%;
-} */
 .asistio {
   background-color: #d4edda; /* Verde claro */
 }
@@ -95,25 +99,26 @@ input[type="checkbox"]:checked[data-status="excusa"] {
 }
 
 button {
-    display: block;
-    margin: 30px auto;
-    font-size: 1.2em;
-    padding: 0.7em 1.4em;
-    background-color: #39A900;
-    text-decoration: none;
-    border: none;
-    border-radius: 0.5em;
-    color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
+  display: block;
+  margin: 30px auto;
+  font-size: 1.2em;
+  font-family: calibri;
+  padding: 0.7em 1.4em;
+  background-color: #39A900;
+  text-decoration: none;
+  border: none;
+  border-radius: 0.5em;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 button:active {
-    background-color: #004085;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transform: translateY(2px);
+  background-color: #004085;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: translateY(2px);
 }
