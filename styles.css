@@ -23,6 +23,18 @@ h1 {
   height: 45px;
   background-color: #39A900;
 }
+
+.Fecha{
+  display: block;
+  margin-left: 43%;
+  color: #ffff;
+  font-size: 35px;
+  border-radius: 10px ;
+  text-align: center;
+  width: 200px;
+  height: 45px;
+  background-color: #39A900;
+}
 h3:hover{
   background-color: #004085;
 }
@@ -46,7 +58,7 @@ th {
   text-transform: uppercase;
 }
 th:hover{
-  background-color: #004085;
+  background-color: #004085 ;
 }
 tr:nth-child(even) {
   background-color: #f2f2f2;
