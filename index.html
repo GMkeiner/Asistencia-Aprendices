@@ -4,19 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asistencia de Alumnos</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="icon" href="img/logoSena.png">
 </head>
 <body>
     <h1>Registro de Asistencia de Alumnos</h1>
-    <h3 class="June">Julio</h3>
     <h3 class="Fecha">Fecha</h3>
     <table id="attendanceTable">
         <thead>
             <tr>
                 <th>Alumno</th>
-                <th>Día</th>
                 <th>Asistió</th>
                 <th>No Asistió</th>
                 <th>Excusa</th>
@@ -26,7 +24,6 @@
         <tbody>
             <tr>
                 <td>Alex David Gonzalez Pabuena</td>
-                <td>Lunes</td>
                 <td><input type="checkbox" name="attendance1" data-status="asistio" onclick="updateRowColor(this)"></td> 
                 <td><input type="checkbox" name="attendance1" data-status="noAsistio" onclick="updateRowColor(this)"></td>
                 <td><input type="checkbox" name="attendance1" data-status="excusa" onclick="updateRowColor(this)"></td>
@@ -34,7 +31,6 @@
             </tr>
             <tr>
                 <td>Jose Carlos Lozano Velasquez</td>
-                <td>Martes</td>
                 <td><input type="checkbox" name="attendance2" data-status="asistio" onclick="updateRowColor(this)"></td>
                 <td><input type="checkbox" name="attendance2" data-status="noAsistio" onclick="updateRowColor(this)"></td>
                 <td><input type="checkbox" name="attendance2" data-status="excusa" onclick="updateRowColor(this)"></td>
@@ -42,7 +38,6 @@
             </tr>
             <tr>
                 <td>David Jose Rua Ramirez</td>
-                <td>Martes</td>
                 <td><input type="checkbox" name="attendance3" data-status="asistio" onclick="updateRowColor(this)"></td>
                 <td><input type="checkbox" name="attendance3" data-status="noAsistio" onclick="updateRowColor(this)"></td>
                 <td><input type="checkbox" name="attendance3" data-status="excusa" onclick="updateRowColor(this)" ></td>
@@ -50,7 +45,6 @@
             </tr>
             <tr>
                 <td>Juan Carlos Narvaez Orellano</td>
-                <td>Martes</td>
                 <td><input type="checkbox" name="attendance4" data-status="asistio" onclick="updateRowColor(this)"></td>
                 <td><input type="checkbox" name="attendance4" data-status="noAsistio" onclick="updateRowColor(this)"></td>
                 <td><input type="checkbox" name="attendance4"  data-status="excusa" onclick="updateRowColor(this)"></td>
@@ -58,7 +52,6 @@
             </tr>
             <tr>
                 <td>Natalia Del Carmen Palacio </td>
-                <td>Martes</td>
                 <td><input type="checkbox" name="attendace5" data-status="asistio" onclick="updateRowColor(this)"></td> 
                 <td><input type="checkbox" name="attendace5" data-status="noAsistio" onclick="updateRowColor(this)"></td>
                 <td><input type="checkbox" name="attendace5" data-status="excusa" onclick="updateRowColor(this)"></td>
@@ -66,7 +59,6 @@
             </tr>
             <tr>
                 <td>Junior Ivan Carvajal Carrillo</td>
-                <td>Martes</td>
                 <td><input type="checkbox" name="attendance6" data-status="asistio" onclick="updateRowColor(this)"></td> 
                 <td><input type="checkbox" name="attendance6" data-status="noAsistio" onclick="updateRowColor(this)"></td>
                 <td><input type="checkbox" name="attendance6" data-status="excusa" onclick="updateRowColor(this)"></td>
@@ -74,7 +66,6 @@
             </tr>
             <tr>
                 <td>Juan David Guzman Mendoza</td>
-                <td>Martes</td>
                 <td><input type="checkbox" name="attendance7" data-status="asistio" onclick="updateRowColor(this)"></td> 
                 <td><input type="checkbox" name="attendance7" data-status="noAsistio" onclick="updateRowColor(this)"></td>
                 <td><input type="checkbox" name="attendance7" data-status="excusa" onclick="updateRowColor(this)"></td>
@@ -82,7 +73,6 @@
             </tr>
             <tr>
                 <td>Larson David Torres Duncan</td>
-                <td>Martes</td>
                 <td><input type="checkbox" name="attendance8" data-status="asistio" onclick="updateRowColor(this)"></td> 
                 <td><input type="checkbox" name="attendance8" data-status="noAsistio" onclick="updateRowColor(this)"></td>
                 <td><input type="checkbox" name="attendance8" data-status="excusa" onclick="updateRowColor(this)"></td>
@@ -90,7 +80,6 @@
             </tr>
             <tr>
                 <td>Roberto Carlos Estrada Osorio</td>
-                <td>Martes</td>
                 <td><input type="checkbox" name="attendance9" data-status="asistio" onclick="updateRowColor(this)"></td> 
                 <td><input type="checkbox" name="attendance9" data-status="noAsistio" onclick="updateRowColor(this)"></td>
                 <td><input type="checkbox" name="attendance9" data-status="excusa" onclick="updateRowColor(this)"></td>
@@ -98,7 +87,6 @@
             </tr>
             <tr>
                 <td>Zharick Yileicis Basanta Pizarro</td>
-                <td>Martes</td>
                 <td><input type="checkbox" name="attendance10" data-status="asistio" onclick="updateRowColor(this)"></td> 
                 <td><input type="checkbox" name="attendance10" data-status="noAsistio" onclick="updateRowColor(this)"></td>
                 <td><input type="checkbox" name="attendance10" data-status="excusa" onclick="updateRowColor(this)"></td>
@@ -106,7 +94,6 @@
             </tr>
             <tr>
                 <td>Maria Alejandra Herrera Arellana </td>
-                <td>Martes</td>
                 <td><input type="checkbox" name="attendance11" data-status="asistio" onclick="updateRowColor(this)"></td> 
                 <td><input type="checkbox" name="attendance11" data-status="noAsistio" onclick="updateRowColor(this)"></td>
                 <td><input type="checkbox" name="attendance11" data-status="excusa" onclick="updateRowColor(this)"></td>
@@ -115,7 +102,6 @@
             </tr>
             <tr>
                 <td>Jam Piere Molina Salazar</td>
-                <td>Martes</td>
                 <td><input type="checkbox" name="attendance12" data-status="asistio" onclick="updateRowColor(this)"></td> 
                 <td><input type="checkbox" name="attendance12" data-status="noAsistio" onclick="updateRowColor(this)"></td>
                 <td><input type="checkbox" name="attendance12" data-status="excusa" onclick="updateRowColor(this)"></td>
@@ -124,7 +110,6 @@
             </tr>
             <tr>
                 <td>Eliana Carracedo Navarro</td>
-                <td>Martes</td>
                 <td><input type="checkbox" name="attendance13" data-status="asistio" onclick="updateRowColor(this)"></td> 
                 <td><input type="checkbox" name="attendance13" data-status="noAsistio" onclick="updateRowColor(this)"></td>
                 <td><input type="checkbox" name="attendance13" data-status="excusa" onclick="updateRowColor(this)"></td>
@@ -132,7 +117,6 @@
             </tr>
             <tr>
                 <td>Mishelle Andrea Echeverria Astorga</td>
-                <td>Martes</td>
                 <td><input type="checkbox" name="attendance14" data-status="asistio" onclick="updateRowColor(this)"></td> 
                 <td><input type="checkbox" name="attendance14" data-status="noAsistio" onclick="updateRowColor(this)"></td>
                 <td><input type="checkbox" name="attendance14" data-status="excusa" onclick="updateRowColor(this)"></td>
@@ -140,7 +124,6 @@
             </tr>
             <tr>
                 <td>Efrain De Los Reyes Luna</td>
-                <td>Martes</td>
                 <td><input type="checkbox" name="attendance15" data-status="asistio" onclick="updateRowColor(this)"></td> 
                 <td><input type="checkbox" name="attendance15" data-status="noAsistio" onclick="updateRowColor(this)"></td>
                 <td><input type="checkbox" name="attendance15" data-status="excusa" onclick="updateRowColor(this)"></td>
@@ -148,7 +131,6 @@
             </tr>
             <tr>
                 <td>Johan Sebastian Semprum Polo</td>
-                <td>Martes</td>
                 <td><input type="checkbox" name="attendance16" data-status="asistio" onclick="updateRowColor(this)"></td> 
                 <td><input type="checkbox" name="attendance16" data-status="noAsistio" onclick="updateRowColor(this)"></td>
                 <td><input type="checkbox" name="attendance16" data-status="excusa" onclick="updateRowColor(this)"></td>
@@ -156,7 +138,6 @@
             </tr>
             <tr>
                 <td>Alan David Camargo Camargo</td>
-                <td>Martes</td>
                 <td><input type="checkbox" name="attendance17" data-status="asistio" onclick="updateRowColor(this)"></td> 
                 <td><input type="checkbox" name="attendance17" data-status="noAsistio" onclick="updateRowColor(this)"></td>
                 <td><input type="checkbox" name="attendance17" data-status="excusa" onclick="updateRowColor(this)"></td>
@@ -164,7 +145,6 @@
             </tr>
             <tr>
                 <td>Luis David Jimenez Berdugo</td>
-                <td>Martes</td>
                 <td><input type="checkbox" name="attendance18" data-status="asistio" onclick="updateRowColor(this)"></td> 
                 <td><input type="checkbox" name="attendance18" data-status="noAsistio" onclick="updateRowColor(this)"></td>
                 <td><input type="checkbox" name="attendance18" data-status="excusa" onclick="updateRowColor(this)"></td>
@@ -172,7 +152,6 @@
             </tr>
             <tr>
                 <td>Sebastian Andres Montealegre Rodriguez</td>
-                <td>Martes</td>
                 <td><input type="checkbox" name="attendance19" data-status="asistio" onclick="updateRowColor(this)"></td> 
                 <td><input type="checkbox" name="attendance19" data-status="noAsistio" onclick="updateRowColor(this)"></td>
                 <td><input type="checkbox" name="attendance19" data-status="excusa" onclick="updateRowColor(this)"></td>
@@ -180,7 +159,6 @@
             </tr>
             <tr>
                 <td>Yaine Marcela Garecarnt Hernandez</td>
-                <td>Martes</td>
                 <td><input type="checkbox" name="attendance20" data-status="asistio" onclick="updateRowColor(this)"></td> 
                 <td><input type="checkbox" name="attendance20" data-status="noAsistio" onclick="updateRowColor(this)"></td>
                 <td><input type="checkbox" name="attendance20" data-status="excusa" onclick="updateRowColor(this)"></td>
@@ -189,7 +167,6 @@
             </tr>
             <tr>
                 <td>Ismael David Cuello Mercado</td>
-                <td>Martes</td>
                 <td><input type="checkbox" name="attendance21" data-status="asistio" onclick="updateRowColor(this)"></td> 
                 <td><input type="checkbox" name="attendance21" data-status="noAsistio" onclick="updateRowColor(this)"></td>
                 <td><input type="checkbox" name="attendance21" data-status="excusa" onclick="updateRowColor(this)"></td>
@@ -198,7 +175,6 @@
             </tr>
             <tr>
                 <td>Henry Castro Mayoral </td>
-                <td>Martes</td>
                 <td><input type="checkbox" name="attendace22" data-status="asistio" onclick="updateRowColor(this)"></td> 
                 <td><input type="checkbox" name="attendace22" data-status="noAsistio" onclick="updateRowColor(this)"></td>
                 <td><input type="checkbox" name="attendace22" data-status="excusa" onclick="updateRowColor(this)"></td>
@@ -206,7 +182,6 @@
             </tr>
             <tr>
                 <td>Esteban Calvo Hernandez </td>
-                <td>Martes</td>
                 <td><input type="checkbox" name="attendance23" data-status="asistio" onclick="updateRowColor(this)"></td> 
                 <td><input type="checkbox" name="attendance23" data-status="noAsistio" onclick="updateRowColor(this)"></td>
                 <td><input type="checkbox" name="attendance23" data-status="excusa" onclick="updateRowColor(this)"></td>
@@ -215,7 +190,6 @@
             </tr>
             <tr>
                 <td>Santiago Jose Villalobos Guerra</td>
-                <td>Martes</td>
                 <td><input type="checkbox" name="attendance24" data-status="asistio" onclick="updateRowColor(this)"></td> 
                 <td><input type="checkbox" name="attendance24" data-status="noAsistio" onclick="updateRowColor(this)"></td>
                 <td><input type="checkbox" name="attendance24" data-status="excusa" onclick="updateRowColor(this)"></td>
@@ -224,7 +198,6 @@
             </tr>
             <tr>
                 <td>Fabio Luis Molina Ramirez</td>
-                <td>Martes</td>
                 <td><input type="checkbox" name="attendance25" data-status="asistio" onclick="updateRowColor(this)"></td> 
                 <td><input type="checkbox" name="attendance25" data-status="noAsistio" onclick="updateRowColor(this)"></td>
                 <td><input type="checkbox" name="attendance25" data-status="excusa" onclick="updateRowColor(this)"></td>
@@ -233,7 +206,6 @@
             </tr>
             <tr>
                 <td>Keiner Jose Muñoz Pallares</td>
-                <td>Martes</td>
                 <td><input type="checkbox" name="attendance26" data-status="asistio" onclick="updateRowColor(this)"></td> 
                 <td><input type="checkbox" name="attendance26" data-status="noAsistio" onclick="updateRowColor(this)"></td>
                 <td><input type="checkbox" name="attendance26" data-status="excusa" onclick="updateRowColor(this)"></td>
@@ -242,7 +214,6 @@
             </tr>
             <tr>
                 <td>José Luis Ibáñez Silvera</td>
-                <td>Martes</td>
                 <td><input type="checkbox" name="attendance27" data-status="asistio" onclick="updateRowColor(this)"></td> 
                 <td><input type="checkbox" name="attendance27" data-status="noAsistio" onclick="updateRowColor(this)"></td>
                 <td><input type="checkbox" name="attendance27" data-status="excusa" onclick="updateRowColor(this)"></td>
@@ -251,7 +222,6 @@
             </tr>
             <tr>
                 <td>Andres Felipe Sandoval Nuñez</td>
-                <td>Martes</td>
                 <td><input type="checkbox" name="attendance28" data-status="asistio" onclick="updateRowColor(this)"></td> 
                 <td><input type="checkbox" name="attendance28" data-status="noAsistio" onclick="updateRowColor(this)"></td>
                 <td><input type="checkbox" name="attendance28" data-status="excusa" onclick="updateRowColor(this)"></td>
@@ -259,7 +229,6 @@
             </tr>
             <tr>
                 <td>Isaac David Quintero Lobo</td>
-                <td>Martes</td>
                 <td><input type="checkbox" name="attendance29" data-status="asistio" onclick="updateRowColor(this)"></td> 
                 <td><input type="checkbox" name="attendance29" data-status="noAsistio" onclick="updateRowColor(this)"></td>
                 <td><input type="checkbox" name="attendance29" data-status="excusa" onclick="updateRowColor(this)"></td>
@@ -267,7 +236,6 @@
             </tr>
             <tr>
                 <td>Sebastian Cantor Gomez</td>
-                <td>Martes</td>
                 <td><input type="checkbox" name="attendance30" data-status="asistio" onclick="updateRowColor(this)"></td> 
                 <td><input type="checkbox" name="attendance30" data-status="noAsistio" onclick="updateRowColor(this)"></td>
                 <td><input type="checkbox" name="attendance30" data-status="excusa" onclick="updateRowColor(this)"></td>
@@ -279,7 +247,7 @@
     <button onclick="saveAttendance()">
         Guardar Asistencia
     </button>
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
    
 </body>
 </html>

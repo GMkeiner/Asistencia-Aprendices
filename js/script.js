@@ -11,13 +11,7 @@ function updateRowColor(checkbox) {
             row.classList.add(box.getAttribute('data-status'));
         }
     }
-    for (const box of checkboxes) {
-        if (box.checked) {
-            row.classList.add(box.getAttribute('data-status'));
-        }
-    }
 }
-
 
 function saveAttendance() {
     Swal.fire({
@@ -25,6 +19,7 @@ function saveAttendance() {
         title: 'Asistencia guardada',
         text: 'Los registros de asistencia se han guardado correctamente',
     });
+
     const table = document.getElementById('attendanceTable');
     const rows = table.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
     const attendanceData = [];
@@ -32,15 +27,13 @@ function saveAttendance() {
     for (let i = 0; i < rows.length; i++) {
         const cells = rows[i].getElementsByTagName('td');
         const alumno = cells[0].innerText;
-        const dia = cells[1].innerText;
-        const asistio = cells[2].getElementsByTagName('input')[0].checked;
-        const noAsistio = cells[3].getElementsByTagName('input')[0] .checked;
-        const excusa = cells[4].getElementsByTagName('input')[0].checked;
-        const comentario = cells[5].getElementsByTagName('input')[0].value;
+        const asistio = cells[1].getElementsByTagName('input')[0].checked;
+        const noAsistio = cells[2].getElementsByTagName('input')[0].checked;
+        const excusa = cells[3].getElementsByTagName('input')[0].checked;
+        const comentario = cells[4].getElementsByTagName('input')[0].value;
 
         attendanceData.push({
             alumno,
-            dia,
             asistio,
             noAsistio,
             excusa,
